@@ -1,29 +1,8 @@
 #include <stdio.h>
-#include <stdlib.h>
 #include "myTypes.h"
+#include "SelectionSort.h"
 
-#define Data_Length 10
-
-int arr[Data_Length] = {0};
-
-int fillArray(int *array, int length);
-int Selection_Sort(int *array, int length);
-int printArray(int *array, int length);
-void swap2Numbers(int* num1 , int* num2);
-
-
-void main(void) {
-
-    int userData[Data_Length] = {5, 8, -1, 10, 7, 2, 9, 4, 0, 3};
-    fillArray(userData, Data_Length);
-    printf("Before Selection sort : \n");
-    printArray(arr, Data_Length);
-    Selection_Sort(arr, Data_Length);
-    printf("After Selection sort : \n");
-    printArray(arr, Data_Length);
-    printf("\nSorted Successfully! \n");
-}
-
+int arr[DATA_LENGTH] = {0};
 
 int fillArray(int *array, int length)
 {
